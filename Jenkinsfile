@@ -4,7 +4,7 @@ pipeline {
     environment {
         SONAR_SCANNER_HOME = 'C:\\sonar-scanner-5.0.1.3006-windows\\bin'
         SONAR_HOST_URL = 'http://localhost:9000'
-        SONAR_PROJECT_KEY = 'Ilyas Mohamed'
+        SONAR_PROJECT_KEY = 'IlyasMohamed'
         SONAR_LOGIN = 'sqa_e8842f28249b1fb92365f09aae3e53f960f698bf'
     }
 
@@ -18,7 +18,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('Mohamed') {
-                   bat 'C:\\sonar-scanner-5.0.1.3006-windows\\bin\\sonar-scanner -Dsonar.projectKey=Ilyas Mohamed -Dsonar.sources=src -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_e8842f28249b1fb92365f09aae3e53f960f698bf'
+                   bat 'C:\\sonar-scanner-5.0.1.3006-windows\\bin\\sonar-scanner -Dsonar.projectKey=IlyasMohamed -Dsonar.sources=src -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_e8842f28249b1fb92365f09aae3e53f960f698bf'
                 }
             }
         }
